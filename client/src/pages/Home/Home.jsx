@@ -1,7 +1,14 @@
-import styles from "./home.module.scss";
+import { BoardColumn } from "modules/board";
+import styled from "styled-components";
+
+const StyledHome = styled.div``;
 
 const Home = () => {
-  return <div className={styles.heading}>Home</div>;
+  return (
+    <StyledHome>
+      <BoardColumn />
+    </StyledHome>
+  );
 };
 
 export default Home;
